@@ -75,3 +75,5 @@ with tab2:
     if st.button("Predict Hardcoded Example"):
         prediction = model.predict(test_scaled)[0]
         st.success(f"Predicted Sales: ₹{prediction:,.2f}")
+import os
+st.write("Files in current directory:", os.listdir())
